@@ -1,0 +1,257 @@
+@media screen and (max-width: 1300px) {
+    .all_levels {
+        width: 1142px;
+        height: 642px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .table {
+        background-image: url("../img/room/room_0000_table.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        top: 349px;
+        left: 917px;
+        width: 241px;
+        height: 297px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .picture {
+        background-image: url("../img/room/room_0004_picture.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        top: -47px;
+        left: 104px;
+        width: 113px;
+        height: 151px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .bookstore {
+        background-image: url("../img/room/room_0001_bookstore.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        top: -235px;
+        left: 751px;
+        width: 222px;
+        height: 308px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .door {
+        background-image: url("../img/room/room_0002_door.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        top: -567px;
+        left: 534px;
+        width: 219px;
+        height: 299px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .makeup {
+        background-image: url("../img/room/room_0003_makeup.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        top: -756px;
+        left: 363px;
+        width: 9.7%;
+        height: 262px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .stage1 {
+        display: block;
+        margin: auto;
+        width: 1148px;
+        height: 648px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .view {
+        background-image: url(..//img/books.jpg);
+        background-size: contain;
+        position: relative;
+        top: -808px;
+        left: 174px;
+        display: none;
+        height: 456px;
+        width: 816px;
+        border: 3px solid white;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .glass {
+        top: 302px;
+        left: 321px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .lighter {
+        top: 314px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .paper {
+        top: 164px;
+        left: 380px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .case_view {
+        top: -794px;
+        left: 174px;
+        height: 456px;
+        width: 816px;
+    }
+    .clues {
+        list-style: none;
+        margin: -106px auto auto 19px;
+    }
+    .clue_cell {
+        position: relative;
+        top: 119px;
+        width: 64px;
+        height: 66px;
+        border-bottom: 3px solid dimgray;
+    }
+    .docs_slide {
+        height: 362px;
+        width: 588px;
+        margin: -168px 14px auto auto;
+    }
+    .close_docs {
+        left: 404px;
+        top: -399px;
+    }
+    .note_from_proffesor {
+        width: 513px;
+        left: -31px;
+        top: 36px;
+    }
+    .hints {
+        position: absolute;
+        z-index: 2;
+        height: 84px;
+        width: 288px;
+        top: 257px;
+        left: 519px;
+        opacity: 0.8;
+        box-shadow: 2px 2px 36px black;
+        background-color: #161c22;
+    }
+    .hummer {
+        position: absolute;
+        top: 483px;
+        left: 538px;
+        width: 68px;
+        height: 50px;
+        z-index: 1;
+    }
+    .hole {
+        top: -659px;
+        left: 260px;
+        width: 139px;
+    }
+    .storage {
+        top: -185px;
+        left: 6px;
+    }
+    /*    ================================level 2======================*/
+    .computer {
+        position: relative;
+        top: 364px;
+        left: 621px;
+        width: 139px;
+    }
+    .logos {
+        position: relative;
+        top: 198px;
+        left: 107px;
+        width: 163px;
+        height: 208px;
+    }
+    .fire {
+        position: relative;
+        top: -31px;
+        left: 938px;
+        width: 47px;
+        height: 30px;
+    }
+    /*--------------------------------------------------safe----------------------------*/
+    .safe {
+        position: relative;
+        top: -55px;
+        left: 883px;
+        width: 39px;
+        height: 54px;
+    }
+    .safe_closer {
+        position: relative;
+        top: 96px;
+        left: 448px;
+        width: 100px;
+    }
+    .safe_but {
+        display: none;
+        position: relative;
+        top: -27px;
+        left: -46px;
+        width: 54px;
+        height: 53px;
+        z-index: 200;
+        background-color: black;
+        color: aliceblue;
+    }
+    .safe_but>tbody>tr>td {
+        height: 13px;
+        width: 50px;
+        border: 1px solid dimgray;
+        font-size: 11px;
+        /* margin: 0px; */
+    }
+    .code {
+        position: relative;
+        display: none;
+        width: 194px;
+        height: 31px;
+        top: -156px;
+        left: -107px;
+        resize: none;
+        font-size: 28px;
+        color: green;
+        background-color: black;
+    }
+    .erase {
+        top: -81px;
+        left: 295px;
+    }
+    .accept_code {
+        top: -69px;
+        left: 295px;
+    }
+    /*--------------------------------------------------end safe----------------------------*/
+    .shelfes {
+        position: relative;
+        top: -119px;
+        left: 433px;
+        width: 121px;
+        height: 129px;
+    }
+}

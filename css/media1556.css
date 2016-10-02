@@ -1,0 +1,170 @@
+@media screen and (max-width: 1556px) {
+    .theRoom {
+        background-image: url(../img/room/room.jpg);
+    }
+    .all_levels {
+        background-size: contain;
+        margin: auto;
+        width: 1307px;
+        height: 735px;
+        border: 3px solid black;
+    }
+}
+
+@media screen and (max-width: 1556px) {
+    .table {
+        background-image: url("../img/room/room_0000_table.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        top: 400px;
+        left: 1052px;
+        width: 241px;
+        height: 337px;
+    }
+}
+
+@media screen and (max-width: 1556px) {
+    .picture {
+        background-image: url("../img/room/room_0004_picture.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        top: -51px;
+        left: 120px;
+        width: 113px;
+        height: 175px;
+    }
+}
+
+@media screen and (max-width: 1556px) {
+    .bookstore {
+        background-image: url("../img/room/room_0001_bookstore.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        top: -269px;
+        left: 861px;
+        width: 222px;
+        height: 354px;
+    }
+}
+
+@media screen and (max-width: 1556px) {
+    .door {
+        background-image: url("../img/room/room_0002_door.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        top: -649px;
+        left: 612px;
+        width: 219px;
+        height: 340px;
+    }
+}
+
+@media screen and (max-width: 1556px) {
+    .makeup {
+        background-image: url("../img/room/room_0003_makeup.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        top: -863px;
+        left: 415px;
+        width: 9.7%;
+        height: 262px;
+    }
+}
+
+@media screen and (max-width: 1556px) {
+    .stage1 {
+        display: block;
+        margin: auto;
+        width: 1314px;
+        height: 742px;
+    }
+    .hummer {
+        position: absolute;
+        top: 559px;
+        left: 648px;
+        width: 80px;
+        height: 50px;
+        z-index: 1;
+    }
+    .hole {
+        top: -716px;
+        left: 296px;
+        width: 157px;
+    }
+    body {
+        overflow: hidden;
+    }
+    .storage {
+        top: -266px;
+        left: -5px;
+    }
+    /*    ================================level 2======================*/
+    .computer {
+        position: relative;
+        top: 415px;
+        left: 669px;
+    }
+    .logos {
+        position: relative;
+        top: 249px;
+        left: 97px;
+        width: 211px;
+        height: 208px;
+    }
+    .fire {
+        position: relative;
+        top: 12px;
+        left: 1073px;
+        width: 58px;
+        height: 45px;
+    }
+    /*--------------------------------------------------safe----------------------------*/
+    .safe {
+        position: relative;
+        top: -20px;
+        left: 1012px;
+        width: 39px;
+        height: 54px;
+    }
+    .safe_closer {
+        top: 200px;
+        left: 612px;
+    }
+    .safe_but {
+    display: none;
+    position: relative;
+    top: -50px;
+    left: -45px;
+    width: 77px;
+    height: 78px;
+    z-index: 200;
+    background-color: black;
+    color: aliceblue;
+}
+    .code {
+    position: relative;
+    display: none;
+    width: 277px;
+    height: 36px;
+    top: -230px;
+    left: -124px;
+    resize: none;
+    font-size: 30px;
+    color: green;
+    background-color: black;
+    
+}
+     /*--------------------------------------------------end safe----------------------------*/
+    .shelfes {
+        position: relative;
+        top: -91px;
+        left: 479px;
+        width: 160px;
+        height: 171px;
+    }
+}

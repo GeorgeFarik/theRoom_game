@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>room</title>
+    <script src="script/jquery-3.1.0.min.js"></script>
+    <script src="script/jquery-ui-1.12.0.custom/jquery-ui-1.12.0.custom/jquery-ui.min.js"></script>
+    <script src="script/main.js"></script>
+    <style>
+        .forDrop {
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+            position: absolute;
+            top: 100px;
+            left: 900px;
+        }
+        
+        .not_for_drop {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            position: absolute;
+            top: 100px;
+            left: 400px;
+        }
+        
+        .tool {
+            width: 80px;
+            height: 80px;
+            background-color: aquamarine;
+            position: absolute;
+            top: 40px;
+            left: 75px;
+        }
+        
+        .storage {
+            list-style: none;
+            position: relative;
+        }
+        
+        .cell {
+            height: 100px;
+            width: 100px;
+            border: 2px solid black
+        }
+        
+        .item2 {}
+        
+        .red {
+            position: absolute;
+            top: 240px;
+            left: 275px;
+            background-color: red;
+            width: 50px;
+            height: 50px;
+        }
+        
+        .blue {
+            position: absolute;
+            top: 240px;
+            left: 475px;
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+        }
+        
+        .item_in_storage {
+            position: absolute;
+            background-color: black;
+            width: 50px;
+            height: 50px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="forDrop for_blue"></div>
+    <div class="not_for_drop"></div>
+    <ul class="storage">
+        <li class='cell empty'></li>
+        <li class='cell empty '></li>
+        <li class='cell empty '></li>
+        <li class='cell empty'></li>
+        <li class='cell empty'></li>
+    </ul>
+    <div class="tool item2 red" id='tool'></div>
+    <div class="tool item2 blue " id='tool'></div>
+    <script>
+
+        
+        
+     match_on_drop('.forDrop', '.blue')   
+        
+        
+        
+        
+
+function match_on_drop(drop_elem, tool_to_match){
+    $(drop_elem).droppable({ //works але прийдеться напевно так писати для кожного дропа((( для того шоб пропадв іменно його tool
+            accept: tool_to_match
+            , drop: function (event, ui) {
+
+                delete_tool(tool_to_match)
+                $(drop_elem).css({
+                    'background-color': 'red'
+                })
+            }
+
+        })
+}
+        //-------------------------------------------------------------------------
+        function delete_tool(a) {
+            $(a).remove()
+            cell_empty()
+        }
+        //-------------------------------------------------------------------------
+        function cell_ocupied() { // works
+            $('.cell').has('.tool').addClass('ocupied').removeClass('empty')
+        }
+        //-------------------------------------------------------------------------
+        function cell_empty() {
+            $('.cell').not(':has(".tool")').addClass('empty').removeClass('ocupied')
+        }
+        //-------------------------------------------------------------------------
+
+
+
+        //=============================================================================================
+
+        function item_in_storage(a) {//works
+            $(a).draggable({
+                revert: true
+                , revertDuration: 1000
+            });
+        };
+
+
+        function tool_on_click(tool_name, cell, forDrop) { //works
+
+            var first_cell = $('.storage').find('.empty:first')
+            var first_cell_position = first_cell.position()
+            var first_cell_position_top = first_cell_position.top + 30
+            var first_cell_position_left = first_cell_position.left + 20
+            $(tool_name).appendTo(first_cell)
+
+            $(tool_name).css({
+                'top': first_cell_position_top
+            })
+
+            $(tool_name).css({
+                'left': first_cell_position_left
+            })
+
+            cell_ocupied()
+            cell_empty()
+            item_in_storage(tool_name)
+
+
+        }
+
+
+        //=============================================================================================
+
+        $('.blue').bind('click', function () { //works
+            tool_on_click('.blue', '.empty', '.forDrop')
+            item_in_storage('.blue')
+        })
+
+        $('.red').bind('click', function () { //works
+            tool_on_click('.red', '.empty')
+            item_in_storage('.red')
+        })
+    </script>
+</body>
+
+</html>
